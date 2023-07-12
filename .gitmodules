@@ -4,4 +4,4 @@
 	branch = master
 [submodule "tmux"]
 	path = tmux
-	url = git@github.com:bilazdev/tmux-config.git
+	url = https://github.com/bilazdev/tmux-config.git
