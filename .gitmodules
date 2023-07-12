@@ -1,7 +1,10 @@
 [submodule "nvim"]
-	path = nvim
-	url = https://github.com/bilazdev/neovim-config.git
-	branch = master
+  path = nvim
+  url = https://github.com/bilazdev/neovim-config.git
+  branch = master
 [submodule "tmux"]
-	path = tmux
-	url = https://github.com/bilazdev/tmux-config.git
+  path = tmux
+  url = https://github.com/bilazdev/tmux-config.git
+[submodule "alacritty/catppuccin"]
+  path = alacritty/catppuccin
+  url = https://github.com/catppuccin/alacritty.git
