@@ -9,3 +9,4 @@
 !.gitignore
 !dotfiles
 !openvpn
+!greenclip.toml
