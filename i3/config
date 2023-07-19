@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-default_border pixel 5
+default_border pixel 1
 gaps inner 0
 gaps outer 0
 smart_gaps on
