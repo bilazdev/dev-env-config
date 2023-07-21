@@ -48,4 +48,8 @@ alias vim="nvim"
 # pnpm
 export PNPM_HOME="/home/bilalx/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+export PIP_HOME="/home/bilalx/.local/bin"
+export PATH="$PIP_HOME:$PATH"
 # pnpm end
+setxkbmap -layout us,ara;
+setxkbmap -option 'grp:alt_shift_tog';
