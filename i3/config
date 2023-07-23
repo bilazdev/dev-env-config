@@ -75,6 +75,8 @@ bindsym $mod+Delete exec rofi -show power-menu -modi power-menu:rofi-power-menu
 bindsym $mod2+q kill
 bindsym $alt+F4 kill
 bindsym $mod2+w exec alacritty -e nmtui
+# open task manager
+bindsym Control+Escape exec alacritty -e glances
 # --- Birghtness Control --- #
 # increase screen brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
