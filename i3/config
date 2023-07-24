@@ -70,7 +70,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+t exec alacritty 
 bindsym $sup+r exec rofi -show drun 
 bindsym $sup+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
-bindsym $mod+Delete exec rofi -show power-menu -modi power-menu:rofi-power-menu
+bindsym $mod+Delete exec rofi -show power-menu -modi power-menu:~/.config/rofi/rofi-power-menu -font='JetBrainsMonoNL NFP:style=Regular'
 # kill focused window
 bindsym $mod2+q kill
 bindsym $alt+F4 kill
