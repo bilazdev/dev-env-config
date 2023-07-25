@@ -52,4 +52,4 @@ export PIP_HOME="/home/bilalx/.local/bin"
 export PATH="$PIP_HOME:$PATH"
 # pnpm end
 setxkbmap -layout us,ara;
-setxkbmap -option 'grp:alt_shift_tog';
+setxkbmap -option 'grp:alt_shift_toggle';
