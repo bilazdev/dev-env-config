@@ -10,3 +10,6 @@ env:
 font:
    family: JetBrainsMono NFM
    style: Regular
+
+window:
+  opacity: 1 

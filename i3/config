@@ -28,9 +28,9 @@ exec_always --no-startup-id "sleep 3; setxkbmap -option 'grp:alt_shift_toggle'"
 exec_always --no-startup-id "sleep 3; greenclip daemon"
 exec_always --no-startup-id "sleep 3; gromit-mpx"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
+exec --no-startup-id picom -CGb
 # Set Wallpaper
-exec --no-startup-id feh --bg-scale .config/wallpaper/Alm-yaa\'lam-ba\'anna-allaha-yara.svg
+exec --no-startup-id feh --bg-fill .config/wallpaper/nestjs.png
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
