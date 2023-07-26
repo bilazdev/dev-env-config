@@ -9,10 +9,11 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-default_border pixel 1
-gaps inner 0
+default_border pixel 4
+gaps inner 10
 gaps outer 0
 smart_gaps on
+hide_edge_borders smart
 
 set $mod Mod1+Control
 set $mod2 Mod4+Control
@@ -31,7 +32,7 @@ exec_always --no-startup-id "sleep 3; gromit-mpx"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id picom -CGb
 # Set Wallpaper
-exec --no-startup-id feh --bg-fill .config/wallpaper/nestjs.png
+exec --no-startup-id feh --bg-fill .config/wallpaper/neon.jpg
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -75,9 +76,9 @@ bindsym $mod+Delete exec rofi -show power-menu -modi power-menu:~/.config/rofi/r
 # kill focused window
 bindsym $mod2+q kill
 bindsym $alt+F4 kill
-bindsym $mod2+w exec alacritty -e nmtui
+bindsym $mod2+w exec kitty -e nmtui
 # open task manager
-bindsym Control+Escape exec alacritty -e glances
+bindsym Control+Escape exec kitty -e htop
 # --- Birghtness Control --- #
 # increase screen brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
