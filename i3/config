@@ -33,7 +33,7 @@ exec_always --no-startup-id "sleep 3; xset r rate 250 50"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id picom -CGb
 # Set Wallpaper
-exec --no-startup-id feh --bg-fill .config/wallpaper/nestjs.jpg
+exec --no-startup-id feh --bg-fill .config/wallpaper/neon.jpg
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
