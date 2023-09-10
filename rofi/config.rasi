@@ -17,4 +17,6 @@ configuration{
 
 //@theme "/home/bilalx/.config/rofi/themes/rounded-blue-dark.rasi"
 //@theme "/usr/share/rofi/themes/android_notification.rasi"
+//@theme "/home/bilalx/.config/rofi/themes/catppuccin-macchiato.rasi"
+//@theme "/usr/share/rofi/themes/Indego.rasi"
 @theme "/home/bilalx/.config/rofi/themes/catppuccin-macchiato.rasi"
