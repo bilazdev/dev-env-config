@@ -78,3 +78,10 @@ function cd() {
 
 }
 activate_venv
+if ! test -n "$TMUX"; then
+    if test -n "$(tmux list-sessions &> /dev/null)"; then
+      tmux a
+    else 
+      tmux
+    fi
+fi
