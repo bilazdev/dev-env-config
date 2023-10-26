@@ -31,6 +31,8 @@ exec_always --no-startup-id "sleep 3; greenclip daemon"
 exec_always --no-startup-id "sleep 3; gromit-mpx"
 exec_always --no-startup-id "sleep 3; xset r rate 250 50"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+exec_always --no-startup-id "xrandr --output DP-4 --scale 0.8x0.8"
 exec --no-startup-id picom -CGb
 # Set Wallpaper
 exec --no-startup-id feh --bg-fill ~/.config/wallpaper/neon.jpg

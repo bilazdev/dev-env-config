@@ -12,7 +12,7 @@
     makepkg -si;
 
 # Downloading Packages
-    yay -S rofi kitty tmux neovim polybar greenclip;
+    yay -S rofi kitty tmux neovim polybar greenclip telegram-desktop google-chrome nvidia arandr;
 
 
 # Modify bashrc
