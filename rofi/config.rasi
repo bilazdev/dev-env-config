@@ -19,4 +19,4 @@ configuration{
 //@theme "/usr/share/rofi/themes/android_notification.rasi"
 //@theme "/home/bilalx/.config/rofi/themes/catppuccin-macchiato.rasi"
 //@theme "/usr/share/rofi/themes/Indego.rasi"
-@theme "/home/bilalx/.config/rofi/themes/catppuccin-macchiato.rasi"
+@theme "./themes/catppuccin-macchiato.rasi"

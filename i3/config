@@ -33,7 +33,7 @@ exec_always --no-startup-id "sleep 3; xset r rate 250 50"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id picom -CGb
 # Set Wallpaper
-exec --no-startup-id feh --bg-fill .config/wallpaper/neon.jpg
+exec --no-startup-id feh --bg-fill ~/.config/wallpaper/neon.jpg
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -78,6 +78,7 @@ bindsym $mod+Delete exec rofi -show power-menu -modi power-menu:~/.config/rofi/r
 bindsym $mod2+q kill
 bindsym $alt+F4 kill
 bindsym $mod2+w exec kitty -e nmtui
+bindsym $mod2+v exec kitty -e "sudo openvpn --config ~/.config/openvpn/nl-free-01.protonvpn.net.tcp.ovpn --auth-user-pass ~/.config/openvpn/credentials"
 # open task manager
 bindsym Control+Escape exec kitty -e htop
 # --- Birghtness Control --- #
