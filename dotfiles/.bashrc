@@ -36,7 +36,7 @@ ex ()
 
 alias vpn="sudo openvpn --config ~/.config/openvpn/nl-free-01.protonvpn.net.tcp.ovpn --auth-user-pass ~/.config/openvpn/credentials"
 #. "$HOME/.cargo/env"
-#source /usr/share/nvm/init-nvm.sh
+source /usr/share/nvm/init-nvm.sh
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -78,10 +78,11 @@ function cd() {
 
 }
 activate_venv
-if ! test -n "$TMUX"; then
-    if test -n "$(tmux list-sessions 2> /dev/null)"; then
-      tmux a
-    else 
-      tmux
-    fi
-fi
+# if ! test -n "$TMUX"; then
+#     if test -n "$(tmux list-sessions 2> /dev/null)"; then
+#       tmux a
+#     else 
+#       tmux
+#     fi
+# fi
+#
