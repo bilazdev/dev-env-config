@@ -34,7 +34,7 @@ ex ()
   fi
 }
 
-alias vpn="sudo openvpn --config ~/.config/openvpn/nl-free-01.protonvpn.net.tcp.ovpn --auth-user-pass ~/.config/openvpn/credentials"
+alias vpn="sudo openvpn --config ~/.config/openvpn/us-free-120030.protonvpn.udp.ovpn --auth-user-pass ~/.config/openvpn/credentials"
 #. "$HOME/.cargo/env"
 source /usr/share/nvm/init-nvm.sh
 
@@ -57,8 +57,11 @@ setxkbmap -option 'grp:alt_shift_toggle';
 function activate_venv() {
     if [[ -z "$VIRTUAL_ENV" ]] ; then
     ## If env folder is found then activate the vitualenv
-      if [[ -d ./.venv ]] ; then
+      if [[ -d ./.venv ]]; then
         source ./.venv/bin/activate
+      fi
+      if [[ -d ./.env ]]; then
+        source ./.env/bin/activate
       fi
   else
     ## check the current folder belong to earlier VIRTUAL_ENV folder
@@ -77,6 +80,7 @@ function cd() {
   activate_venv
 
 }
+
 activate_venv
 # if ! test -n "$TMUX"; then
 #     if test -n "$(tmux list-sessions 2> /dev/null)"; then
