@@ -18,6 +18,10 @@
 # Modify bashrc
     echo 'source ~/.config/dotfiels/.bashrc;' >> ~/.bashrc;
 
+# Modify xprofile
+    sudo chmod +x ~/.config/dotfiles/.xprofile;
+    echo '~/.config/dotfiles/.xprofile;' >> ~/.xprofile;
+
 
 # Enable tap to click with touchpad
 # copy the following to this path: 
