@@ -14,6 +14,7 @@ gaps inner 10
 gaps outer 0
 smart_gaps on
 hide_edge_borders smart
+client.focused              #33ccffee #33ccffee #ffffff
 
 set $mod Mod1+Control
 set $mod2 Mod4+Control
@@ -86,6 +87,7 @@ bindsym $mod2+q kill
 bindsym $alt+F4 kill
 bindsym $mod2+w exec kitty -e nmtui
 bindsym $mod2+v exec kitty -e "sudo openvpn --config ~/.config/openvpn/nl-free-01.protonvpn.net.tcp.ovpn --auth-user-pass ~/.config/openvpn/credentials"
+bindsym $mod+d exec kitty -e ~/.config/i3/scripts/tmux.sh
 # open task manager
 bindsym Control+Escape exec kitty -e htop
 # --- Birghtness Control --- #
@@ -96,7 +98,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 bindsym $sup+plus exec --no-startup-id ~/.config/i3/scripts/zoom.sh 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a

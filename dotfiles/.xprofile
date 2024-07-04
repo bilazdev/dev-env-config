@@ -16,4 +16,4 @@ brightnessctl set 25%;
 
 picom -CGb;
 
-feh --bg-scale ~/.config/wallpaper/flat.jpg;
+feh --bg-scale ~/.config/wallpaper/aqsa.webp;
