@@ -8,12 +8,18 @@ greenclip daemon>/dev/null &
 
 gromit-mpx &
 
+# polybar &
+
 xset r rate 250 50;
 
 $HOME/.config/polybar/launch.sh > /dev/null;
 
 brightnessctl set 25%;
 
-picom -CGb;
+picom -b;
 
-feh --bg-scale ~/.config/wallpaper/aqsa.webp;
+xrandr --output eDP-1 --scale 0.8x0.8
+
+feh --bg-center ~/.config/wallpaper/aya.svg
+
+i3-battery-popup -l 10 -L 20 -s ~/.config/sounds/notify.wav -D -v 100 -t 1 -n &

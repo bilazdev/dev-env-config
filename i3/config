@@ -40,6 +40,9 @@ exec --no-startup-id /usr/lib/kdeconnectd
 # exec --no-startup-id feh --bg-fill ~/.config/wallpaper/neon.jpg
 for_window [class="kdeconnect.daemon"] fullscreen disable floating enable move position 0px 0px resize set 100ppt 100ppt
 for_window [class="Magnus"] fullscreen disable floating enable move position 0px 0px resize set 100ppt 100ppt
+for_window [class="crx_kmfikkopdhmbdbkndkamabamlkkgkpod"] fullscreen disable floating enable sticky enable position 0px 0px resize set 100ppt 100ppt
+
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -58,7 +61,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-exec_always --no-startup-id "xrandr --output eDP-1 --scale 0.8x0.8"
+# exec_always --no-startup-id "xrandr --output eDP-1 --scale 0.8x0.8"
 
 # Use pactl to adjust volume in PulseAudio.
 # set $refresh_i3status killall -SIGUSR1 i3status
@@ -137,6 +140,8 @@ bindsym $mod+o split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
+
+bindsym $mod2+f fullscreen disable floating toggle sticky enable move position 85ppt 85ppt resize set 15ppt 15ppt
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
