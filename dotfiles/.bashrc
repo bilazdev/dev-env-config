@@ -36,7 +36,7 @@ ex ()
 
 alias vpn="sudo openvpn --config ~/.config/openvpn/us-free-120030.protonvpn.udp.ovpn --auth-user-pass ~/.config/openvpn/credentials"
 #. "$HOME/.cargo/env"
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -51,8 +51,6 @@ export PATH="$PNPM_HOME:$PATH"
 export PIP_HOME="/home/bilalx/.local/bin"
 export PATH="$PIP_HOME:$PATH"
 # pnpm end
-setxkbmap -layout us,ara;
-setxkbmap -option 'grp:alt_shift_toggle';
 
 function activate_venv() {
     if [[ -z "$VIRTUAL_ENV" ]] ; then
@@ -76,7 +74,7 @@ function activate_venv() {
 
 function cd() {
   builtin cd "$@"
-  
+
   activate_venv
 
 }
@@ -86,7 +84,7 @@ activate_venv
 # if ! test -n "$TMUX"; then
 #     if test -n "$(tmux list-sessions 2> /dev/null)"; then
 #       tmux a
-#     else 
+#     else
 #       tmux
 #     fi
 # fi
